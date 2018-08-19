@@ -8,7 +8,7 @@ def position_taken?(board,num)
   end
 end
 def valid_move?(board,num)
-  number=num.to_i
+  number=num.to_i-1
   if number.between?(1,9)&& !position_taken?(board,num)
     true
   else
